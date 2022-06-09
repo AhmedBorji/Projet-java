@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficherController">
+   <children>
+      <TableView fx:id="table_view" layoutX="13.0" layoutY="15.0" onMouseClicked="#selectdl" prefHeight="398.0" prefWidth="490.0" style="-fx-background-color: #FFDEAD;">
+         <columns>
+            <TableColumn fx:id="a" prefWidth="75.0" text="Id_user" />
+            <TableColumn fx:id="b" prefWidth="75.0" text="Id_certif" />
+            <TableColumn fx:id="c" prefWidth="97.60003662109375" text="Titre" />
+            <TableColumn fx:id="d" prefWidth="69.5999755859375" text="Type_certif" />
+         </columns>
+      </TableView>
+      <Button fx:id="back3" layoutX="683.0" layoutY="358.0" mnemonicParsing="false" onAction="#back3" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: #DEB887;" text="back" />
+      <TextField fx:id="idddd" layoutX="636.0" layoutY="56.0" prefHeight="32.0" prefWidth="164.0" promptText="supprimer" />
+      <Button fx:id="supp" layoutX="511.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleButtonActionsupprimer" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #DEB887;" text="supprimer" />
+      <TextField fx:id="rechercher" layoutX="534.0" layoutY="181.0" promptText="rechercher" />
+      <Button fx:id="pdf" layoutX="522.0" layoutY="127.0" mnemonicParsing="false" onAction="#pdf" prefHeight="26.0" prefWidth="99.0" text="pdf" />
+      <TextField fx:id="Tit" layoutX="534.0" layoutY="257.0" promptText="Titre" />
+      <TextField fx:id="Type_c" layoutX="534.0" layoutY="292.0" promptText="Type_certif" />
+      <Button fx:id="Modif" layoutX="715.0" layoutY="270.0" mnemonicParsing="false" onAction="#Modif" text="Modifier" />
+   </children>
+</AnchorPane>
